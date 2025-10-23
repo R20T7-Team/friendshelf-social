@@ -1,0 +1,47 @@
+mutation AddFoodItem($name: String!, $caloriesPerServing: Float!, $carbsPerServing: Float!, $fatPerServing: Float!, $proteinPerServing: Float!) @auth(level: USER) {
+  foodItem_insert(data: {
+    name: $name,
+    caloriesPerServing: $caloriesPerServing,
+    carbsPerServing: $carbsPerServing,
+    fatPerServing: $fatPerServing,
+    proteinPerServing: $proteinPerServing
+  })
+}
+
+query GetMealsForUser($userId: UUID!) @auth(level: USER) {
+  meals(where: {userId: {eq: $userId}}) {
+    id
+    logDate
+    mealType
+    photoUrl
+    mealIngredients_on_meal {
+      id
+      quantity
+      foodItem {
+        id
+        name
+        caloriesPerServing
+        carbsPerServing
+        fatPerServing
+        proteinPerServing
+      }
+    }
+  }
+}
+
+mutation CreateMeal($userId: UUID!, $logDate: Date!, $mealType: String!, $photoUrl: String) @auth(level: USER) {
+  meal_insert(data: {
+    userId: $userId,
+    logDate: $logDate,
+    mealType: $mealType,
+    photoUrl: $photoUrl
+  })
+}
+
+mutation CreateUser($displayName: String!) @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users.") {
+  user_insert(data: {
+    displayName: $displayName,
+		id_expr: "auth.uid",
+		createdAt_expr: "request.time"
+  })
+}

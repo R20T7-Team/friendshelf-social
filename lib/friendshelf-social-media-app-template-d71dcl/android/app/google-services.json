@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "523510982810",
+    "project_id": "friendshelf-d081b",
+    "storage_bucket": "friendshelf-d081b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523510982810:android:f395f53b045175a7fe9723",
+        "android_client_info": {
+          "package_name": "com.mycompany.friendshelf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523510982810-3rbjv7gi457v4h2rqrppohu7ie2lfc9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.friendshelf",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "523510982810-2b4enadvf8635ueeo5k24dhie0un1pjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB28KIJvSzg2ZTRSToHeR5FK9lRj8jh1Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523510982810-2b4enadvf8635ueeo5k24dhie0un1pjf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "523510982810-802fb8cik7jkvliajrrbm7mdqjvtv28t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.friendshelf"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

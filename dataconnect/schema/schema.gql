@@ -1,0 +1,50 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+  weight: Float
+  height: Float
+  age: Int
+  gender: String
+  activityLevel: String
+  targetCalories: Int
+}
+
+type Meal @table {
+  user: User!
+  mealType: String!
+  logDate: Date!
+  createdAt: Timestamp!
+  photoUrl: String
+}
+
+type FoodItem @table {
+  name: String!
+  caloriesPerServing: Float!
+  carbsPerServing: Float!
+  proteinPerServing: Float!
+  fatPerServing: Float!
+  createdAt: Timestamp!
+}
+
+type MealIngredient @table {
+  meal: Meal!
+  foodItem: FoodItem!
+  quantity: String!
+  estimatedCalories: Float!
+  estimatedCarbs: Float!
+  estimatedProtein: Float!
+  estimatedFat: Float!
+  createdAt: Timestamp!
+}
+
+type DailySummary @table {
+  user: User!
+  summaryDate: Date!
+  totalCalories: Float!
+  totalCarbs: Float!
+  totalProtein: Float!
+  totalFat: Float!
+  createdAt: Timestamp!
+}

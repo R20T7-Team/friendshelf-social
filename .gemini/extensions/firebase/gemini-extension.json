@@ -1,0 +1,11 @@
+{
+  "name": "firebase",
+  "version": "0.0.1",
+  "mcpServers": {
+    "firebase": {
+      "command": "npx",
+      "args": ["-y", "firebase-tools", "mcp", "--dir", "c:\Users\Pichau\Downloads\friendshelf_social_media_app_template\friendshelf_social_media_app_template"]
+    }
+  },
+  "contextFileName": "FIREBASE.md"
+}

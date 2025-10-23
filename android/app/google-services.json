@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "288261326311",
+    "project_id": "friendshelf-social",
+    "storage_bucket": "friendshelf-social.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288261326311:android:107a01ccba702e5287e942",
+        "android_client_info": {
+          "package_name": "com.mycompany.friendshelf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyxKt7HQb-xmDReCuwA4UG4Cr8qK1To_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
